@@ -1,0 +1,71 @@
+/* src/App.css */
+
+body {
+  background-color: #212529;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.service-card {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  flex: 1 1 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 700px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .service-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .service-card {
+    flex: 1 1 30%;
+  }
+}
